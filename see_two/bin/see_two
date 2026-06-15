@@ -1,0 +1,7 @@
+#!/usr/bin/env ruby
+require_relative '../lib/see_two'
+if ARGV.empty?
+  puts 'Usage: see_two <file.st2>'
+  exit 1
+end
+SeeTwo.run_file(ARGV[0])
